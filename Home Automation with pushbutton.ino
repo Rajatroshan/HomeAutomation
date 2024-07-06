@@ -126,7 +126,7 @@ void loop()
 void listen_push_buttons(){
     //--------------------------------------------------------------------------
     if(digitalRead(button1_pin) == LOW){
-      delay(200);
+      delay(400);
       control_relay(1);
       Blynk.virtualWrite(button1_vpin, relay1_state); //update button state
     }
